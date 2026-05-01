@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>History · Superconducktors · Team 60317</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="duck.css">
+<link rel="icon" href="assets/duck-logo.png">
+</head>
+<body data-page="history" data-screen-label="03 History">
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow fade-up">Chapter 02 · Origin story</span>
+      <h1 class="fade-up fade-up--1">Four names. Three seasons.<br>One Breakthrough Award.</h1>
+      <p class="lead fade-up fade-up--2" style="max-width:62ch;margin-top:24px;">
+        We've been doing this since 5th grade. The team has gone through a few identities along the way —
+        each one taught us something we needed for the next.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="timeline">
+        <div class="tl-line"></div>
+
+        <article class="tl-entry">
+          <div class="tl-year">2023</div>
+          <div class="tl-marker">★</div>
+          <div class="tl-card">
+            <span class="tl-eyebrow">FLL · Masterpiece</span>
+            <h3>The Megabirds</h3>
+            <figure class="tl-photo">
+              <img src="assets/team-megabirds.jpg" alt="The Megabirds with mentors at their first FLL competition" />
+              <figcaption>// 2023 · the original lineup, with mentors</figcaption>
+            </figure>
+            <p>Our first season. Our school's mascot was a bird, so naturally our Lego mascot was a chicken.
+              We learned what an Innovation Project was. We learned how to lose graciously. We learned that
+              robotics is mostly debugging.</p>
+            <div class="tl-meta">
+              <span>Mascot · Lego chicken</span>
+              <span>Status · Curious beginners</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tl-entry tl-entry--right">
+          <div class="tl-year">2024</div>
+          <div class="tl-marker">★</div>
+          <div class="tl-card">
+            <span class="tl-eyebrow">FLL · Submerged</span>
+            <h3>The Awesome Inventors</h3>
+            <p>Year two. Shorthand: <strong>A.I.</strong> Yes, on purpose. We thought it was funny.
+              We started taking the engineering portfolio seriously, prototyped harder, and shipped
+              a custom Innovation Project we were genuinely proud of.</p>
+            <div class="tl-meta">
+              <span>Acronym · A.I.</span>
+              <span>Status · Sharpening</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tl-entry">
+          <div class="tl-year">2025</div>
+          <div class="tl-marker tl-marker--gold">★</div>
+          <div class="tl-card tl-card--gold">
+            <span class="tl-eyebrow">FLL · Unearthed</span>
+            <h3>The Conducktors <span class="tl-trophy">🏆 Breakthrough Award</span></h3>
+            <p>We wanted a name that was fun (ducks!) and related to robotics (conductors!) — and
+              we crammed them together. The Conducktors won the <strong>Breakthrough Award</strong>
+              for creativity on our Innovation Project and our custom robot architecture. Our final
+              FLL season, and our best.</p>
+            <div class="tl-meta">
+              <span>Pun rating · 10/10</span>
+              <span>Status · Champions</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tl-entry tl-entry--right">
+          <div class="tl-year">2026</div>
+          <div class="tl-marker tl-marker--bolt">⚡</div>
+          <div class="tl-card tl-card--current">
+            <span class="tl-eyebrow">FTC · Rookie season</span>
+            <h3>The Superconducktors</h3>
+            <p>Lego is for kids. We're upgrading to metal, motors, and high-powered electronics.
+              The "Super" stands for the leap into FTC, the conductor metaphor for the
+              electronics, and a fundamentally unscientific belief that adding "super" to
+              anything makes it better. <em>You are here.</em></p>
+            <div class="tl-meta">
+              <span>Mascot · Bartholomew II</span>
+              <span>Status · ▶ Building</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="hist-callout">
+        <div>
+          <span class="eyebrow">By the numbers</span>
+          <h2 style="margin-top:16px;">Three years, one trophy, infinite quacks.</h2>
+        </div>
+        <div class="hist-stats">
+          <div><strong>3</strong><span>FLL seasons</span></div>
+          <div><strong>4</strong><span>Team names</span></div>
+          <div><strong>1</strong><span>Breakthrough Award</span></div>
+          <div><strong>0</strong><span>Regrets</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+.page-hero { padding: clamp(60px, 9vw, 110px) 0 clamp(40px, 6vw, 70px); }
+.timeline { position: relative; padding: 20px 0 40px; }
+.tl-line {
+  position: absolute;
+  left: 50%; top: 0; bottom: 0;
+  width: 2px;
+  background: var(--ink);
+  transform: translateX(-50%);
+  opacity: 0.3;
+}
+@media (max-width: 760px) { .tl-line { left: 28px; } }
+
+.tl-entry {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  align-items: center;
+  margin-bottom: 56px;
+  position: relative;
+}
+.tl-entry--right .tl-card { grid-column: 3; }
+.tl-entry--right .tl-year { grid-column: 1; text-align: right; }
+.tl-entry:not(.tl-entry--right) .tl-card { grid-column: 1; }
+.tl-entry:not(.tl-entry--right) .tl-year { grid-column: 3; text-align: left; }
+
+@media (max-width: 760px) {
+  .tl-entry { grid-template-columns: 56px 1fr; }
+  .tl-entry .tl-card,
+  .tl-entry--right .tl-card { grid-column: 2; }
+  .tl-entry .tl-year,
+  .tl-entry--right .tl-year { display: none; }
+  .tl-entry .tl-marker { grid-column: 1; justify-self: start; margin-left: 12px; }
+}
+
+.tl-year {
+  font-family: var(--display);
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 900;
+  color: var(--ink-mute);
+  letter-spacing: -0.02em;
+  opacity: 0.4;
+}
+
+.tl-marker {
+  grid-column: 2;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  color: var(--ink);
+  display: grid; place-items: center;
+  font-size: 18px;
+  justify-self: center;
+  z-index: 1;
+}
+.tl-marker--gold { background: var(--duck); }
+.tl-marker--bolt { background: var(--bolt); animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(59,201,224,0.5); }
+  50% { box-shadow: 0 0 0 12px rgba(59,201,224,0); }
+}
+
+.tl-card {
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 14px;
+  padding: 24px 26px;
+  box-shadow: 5px 5px 0 var(--ink);
+  position: relative;
+}
+.tl-card--gold { background: var(--duck); }
+.tl-card--current { background: var(--bolt); border-color: var(--ink); }
+
+.tl-eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+.tl-card h3 { margin: 8px 0 12px; font-size: clamp(22px, 2.4vw, 28px); display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.tl-trophy {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--ink);
+  color: var(--cream);
+  padding: 4px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+}
+.tl-card p { font-size: 15px; line-height: 1.7; color: var(--ink-soft); }
+.tl-card--current p, .tl-card--gold p { color: var(--ink); }
+.tl-card em { font-style: italic; font-weight: 600; }
+.tl-photo {
+  margin: 14px 0 18px;
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--cream-2);
+}
+.tl-photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.tl-photo figcaption {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  padding: 8px 12px;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+}
+.tl-meta {
+  display: flex; gap: 18px; flex-wrap: wrap;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0,0,0,0.12);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+
+.hist-callout {
+  margin-top: 60px;
+  padding: 56px;
+  background: var(--ink);
+  color: var(--cream);
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+@media (max-width: 760px) { .hist-callout { grid-template-columns: 1fr; padding: 40px 28px; } }
+.hist-callout h2 { color: var(--cream); }
+.hist-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 32px; }
+.hist-stats > div { display: flex; flex-direction: column; gap: 4px; }
+.hist-stats strong { font-family: var(--display); font-size: clamp(36px, 5vw, 56px); font-weight: 900; color: var(--duck); line-height: 1; }
+.hist-stats span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: rgba(255,248,231,0.6); text-transform: uppercase; }
+</style>
+
+<script src="site.js"></script>
+<script src="duck.js"></script>
+</body>
+</html>

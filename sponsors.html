@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sponsors · Superconducktors · Team 60317</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="duck.css">
+<link rel="icon" href="assets/duck-logo.png">
+</head>
+<body data-page="sponsors" data-screen-label="07 Sponsors">
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow fade-up">Chapter 06 · Sponsors</span>
+      <h1 class="fade-up fade-up--1">The people who power the duck.</h1>
+      <p class="lead fade-up fade-up--2" style="max-width:62ch;margin-top:24px;">
+        FTC robots aren't cheap and rookie teams are even more expensive. We are deeply grateful
+        to the organizations that believed in five middle-schoolers with a duck logo.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="sp-tier">
+        <div class="sp-tier__head">
+          <span class="eyebrow">Lead sponsor</span>
+          <h2>Qualcomm</h2>
+        </div>
+        <div class="sp-card sp-card--lead">
+          <div class="sp-logo-box sp-logo-box--img">
+            <img src="assets/Qualcomm-Logo.svg" alt="Qualcomm" class="sp-logo-img" />
+          </div>
+          <p>Qualcomm's support of FIRST programs is the reason rookie teams like ours can even
+            think about competing. Their lead sponsorship covers our control system, registration,
+            and travel to qualifiers.</p>
+        </div>
+      </div>
+
+      <div class="sp-tier">
+        <div class="sp-tier__head">
+          <span class="eyebrow">Foundational support</span>
+          <h2>Gene Haas Foundation</h2>
+        </div>
+        <div class="sp-card">
+          <div class="sp-logo-box sp-logo-box--alt sp-logo-box--img">
+            <img src="assets/gene hass logo.png" alt="Gene Haas Foundation" class="sp-logo-img" />
+          </div>
+          <p>The Gene Haas Foundation's investment in STEM education powers our manufacturing
+            tooling, parts budget, and the ability to prototype boldly without fear of breaking
+            something we can't replace.</p>
+        </div>
+      </div>
+
+      <div class="sp-tier">
+        <div class="sp-tier__head">
+          <span class="eyebrow">With gratitude</span>
+          <h2>Team Spyder</h2>
+        </div>
+        <div class="sp-card sp-card--mentor">
+          <div class="sp-logo-box sp-logo-box--ghost sp-logo-box--img">
+            <img src="assets/team-spyde-logo.jpg" alt="Team Spyder" class="sp-logo-img" />
+          </div>
+          <p>Special thanks to <strong>team Spyder</strong> for guidance, mentorship, and robot
+            parts. They answered our dumb rookie questions without judgment.</p>
+        </div>
+      </div>
+
+      <div class="sp-pitch">
+        <div class="sp-pitch__copy">
+          <span class="eyebrow">Become a sponsor</span>
+          <h2 style="margin-top:14px;">Your logo, on a real robot, in front of real kids.</h2>
+          <p style="margin-top:16px;max-width:52ch;">
+            Sponsoring an FTC team is one of the highest-leverage STEM investments you can make.
+            Your contribution funds students directly, and lives on every part of our robot,
+            jersey, and outreach material.
+          </p>
+        </div>
+        <div class="sp-tiers">
+          <div class="sp-tt">
+            <strong>Friend</strong><span>$100+</span>
+            <p>Logo on website footer · social shoutout</p>
+          </div>
+          <div class="sp-tt sp-tt--mid">
+            <strong>Supporter</strong><span>$500+</span>
+            <p>All Friend perks + logo on team jersey</p>
+          </div>
+          <div class="sp-tt sp-tt--top">
+            <strong>Champion</strong><span>$2,000+</span>
+            <p>All Supporter perks + logo on robot · in-person demo</p>
+          </div>
+        </div>
+        <a href="contact.html" class="btn">Get in touch →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+.page-hero { padding: clamp(60px, 9vw, 110px) 0 clamp(40px, 6vw, 70px); }
+.sp-tier { margin-bottom: 56px; }
+.sp-tier__head { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+.sp-tier__head h2 { font-size: clamp(28px, 4vw, 40px); }
+
+.sp-card {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 32px;
+  align-items: center;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 14px;
+  padding: 32px;
+  box-shadow: 5px 5px 0 var(--ink);
+}
+@media (max-width: 760px) { .sp-card { grid-template-columns: 1fr; } }
+.sp-card--lead { background: var(--duck); }
+.sp-card--mentor { background: var(--cream-2); }
+.sp-card p { font-size: 15px; line-height: 1.7; color: var(--ink-soft); }
+.sp-card--lead p { color: var(--ink); }
+
+.sp-logo-box {
+  background: var(--ink);
+  color: var(--cream);
+  border-radius: 10px;
+  padding: 32px 20px;
+  text-align: center;
+  min-height: 130px;
+  display: grid; place-items: center;
+}
+.sp-logo-box--alt { background: var(--cream); color: var(--ink); border: 1px solid var(--ink); }
+.sp-logo-box--ghost { background: transparent; color: var(--ink); border: 2px dashed var(--ink); }
+.sp-logo-box--img { background: var(--paper); padding: 24px; }
+.sp-logo-box--img.sp-logo-box--alt { background: var(--cream); }
+.sp-logo-box--img.sp-logo-box--ghost { background: var(--paper); }
+.sp-logo-img {
+  max-width: 100%;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.sp-logo-text {
+  font-family: var(--display);
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+.sp-logo-text em { display: block; font-size: 12px; font-style: normal; letter-spacing: 0.2em; opacity: 0.7; margin-top: 4px; font-weight: 600; }
+
+.sp-pitch {
+  margin-top: 80px;
+  padding: 56px;
+  border-radius: 18px;
+  background: var(--ink);
+  color: var(--cream);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+@media (max-width: 760px) { .sp-pitch { padding: 32px 24px; } }
+.sp-pitch h2 { color: var(--cream); }
+.sp-pitch p { color: rgba(255,248,231,0.75); }
+.sp-pitch .eyebrow { color: var(--duck); }
+.sp-pitch .eyebrow::before { background: var(--duck); }
+
+.sp-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 760px) { .sp-tiers { grid-template-columns: 1fr; } }
+.sp-tt { background: rgba(255,248,231,0.06); border: 1px solid rgba(255,248,231,0.12); border-radius: 12px; padding: 22px; }
+.sp-tt strong { font-family: var(--display); font-size: 22px; font-weight: 700; color: var(--cream); display: block; }
+.sp-tt span { font-family: var(--mono); font-size: 12px; color: var(--duck); letter-spacing: 0.06em; display: block; margin-top: 4px; }
+.sp-tt p { font-size: 13px; color: rgba(255,248,231,0.65); margin-top: 12px; }
+.sp-tt--mid { background: rgba(255,138,31,0.15); border-color: rgba(255,138,31,0.4); }
+.sp-tt--top { background: var(--duck); }
+.sp-tt--top strong, .sp-tt--top span, .sp-tt--top p { color: var(--ink); }
+.sp-tt--top span { color: var(--orange-deep); }
+.sp-pitch .btn { justify-self: start; }
+</style>
+
+<script src="site.js"></script>
+<script src="duck.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outreach · Superconducktors · Team 60317</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="duck.css">
+<link rel="icon" href="assets/duck-logo.png">
+</head>
+<body data-page="outreach" data-screen-label="06 Outreach">
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow fade-up">Chapter 05 · Outreach</span>
+      <h1 class="fade-up fade-up--1">Pay it forward.<br>Then quack about it.</h1>
+      <p class="lead fade-up fade-up--2" style="max-width:62ch;margin-top:24px;">
+        We came up through FLL — and we don't forget that. Outreach isn't a checkbox for us;
+        it's the reason we have a team in the first place.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="out-grid">
+        <article class="out-card out-card--big">
+          <span class="out-num">01</span>
+          <h3>Mentoring local FLL teams</h3>
+          <p>We run drop-in sessions for our former FLL community. Robot strategy, programming
+            basics, presentation coaching — all the things we wish someone had told <em>us</em>
+            when we were beginners.</p>
+          <span class="out-tag">Ongoing · monthly</span>
+        </article>
+        <article class="out-card">
+          <span class="out-num">02</span>
+          <h3>gm0-style starter guides</h3>
+          <p>Nora is publishing free, gm0-style guides for FLL teams: how to accept donations,
+            how to write sponsor pitches, how to actually win the Innovation Project.</p>
+          <span class="out-tag">In progress</span>
+        </article>
+        <article class="out-card">
+          <span class="out-num">03</span>
+          <h3>School-wide robotics days</h3>
+          <p>Demoing the robot, running mini build challenges, and recruiting the next
+            generation of Conducktors-in-training.</p>
+          <span class="out-tag">Spring 2026</span>
+        </article>
+        <article class="out-card out-card--bolt">
+          <span class="out-num">04</span>
+          <h3>The duck of it all</h3>
+          <p>Bartholomew II makes appearances. Kids love him. Sponsors love him.
+            We have not yet calculated the ROI on duck-based marketing but it is positive.</p>
+          <span class="out-tag">Forever</span>
+        </article>
+      </div>
+
+      <div class="out-cta">
+        <div>
+          <span class="eyebrow">Want us to come to your school?</span>
+          <h2 style="margin-top:12px;">We do free demos.</h2>
+          <p style="margin-top:14px;max-width:50ch;">Robotics clubs, libraries, after-school
+            programs, science fairs — if you've got students and floor space, we'll bring the duck.</p>
+        </div>
+        <a href="contact.html" class="btn">Request a visit →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+.page-hero { padding: clamp(60px, 9vw, 110px) 0 clamp(40px, 6vw, 70px); }
+.out-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+@media (max-width: 880px) { .out-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 540px) { .out-grid { grid-template-columns: 1fr; } }
+.out-card {
+  background: var(--paper); border: 1px solid var(--ink); border-radius: 14px;
+  padding: 28px; box-shadow: 4px 4px 0 var(--ink);
+  display: flex; flex-direction: column; gap: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.out-card:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--ink); }
+.out-card--big { grid-column: span 2; background: var(--duck); }
+@media (max-width: 880px) { .out-card--big { grid-column: span 2; } }
+@media (max-width: 540px) { .out-card--big { grid-column: span 1; } }
+.out-card--bolt { background: var(--bolt); }
+.out-num { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; color: var(--ink-soft); }
+.out-card h3 { font-family: var(--display); font-size: 22px; font-weight: 700; }
+.out-card p { font-size: 15px; line-height: 1.65; color: var(--ink-soft); flex: 1; }
+.out-card--big p, .out-card--bolt p { color: var(--ink); }
+.out-card em { font-style: italic; }
+.out-tag { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; color: var(--ink); text-transform: uppercase; padding-top: 12px; border-top: 1px dashed rgba(0,0,0,0.18); }
+
+.out-cta {
+  margin-top: 56px; padding: 48px 56px;
+  background: var(--ink); color: var(--cream);
+  border-radius: 18px;
+  display: grid; grid-template-columns: 1fr auto;
+  gap: 32px; align-items: center;
+}
+@media (max-width: 760px) { .out-cta { grid-template-columns: 1fr; padding: 32px 28px; } }
+.out-cta h2 { color: var(--cream); }
+.out-cta p { color: rgba(255,248,231,0.7); }
+.out-cta .eyebrow { color: var(--duck); }
+.out-cta .eyebrow::before { background: var(--duck); }
+</style>
+
+<script src="site.js"></script>
+<script src="duck.js"></script>
+</body>
+</html>

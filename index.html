@@ -1,53 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Superconducktors | FTC Robotics</title>
-    <meta name="description" content="Upgrading from LEGO to Metal. The FTC Team Superconducktors are assembling.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Superconducktors · Team 60317 · FTC</title>
+<meta name="description" content="Team 60317 — the Superconducktors. Rookie FIRST Tech Challenge team, veteran problem-solvers, certified duck enthusiasts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="duck.css">
+<link rel="icon" href="assets/duck-logo.png">
 </head>
-<body>
-    <div id="particle-container"></div>
-    
-    <main class="container">
-        <div class="glass-card" id="main-card">
-            <div class="glow-effect" id="glow"></div>
-            
-            <div class="content">
-                <div class="logo-container">
-                    <img src="assets/logo.png" alt="Superconducktors Logo" class="floating-logo">
-                    <div class="logo-shadow"></div>
-                </div>
-                
-                <h1 class="title">
-                    <span class="gradient-text">SUPER</span>CONDUCKTORS
-                </h1>
-                <div class="badge">FTC Team</div>
-                
-                <p class="subtitle">Upgrading from LEGO to Metal.</p>
-                
-                <div class="terminal">
-                    <div class="terminal-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                    </div>
-                    <div class="terminal-body">
-                        <p class="typewriter">> System initialization...</p>
-                        <p class="typewriter delay-1">> Reticulating splines...</p>
-                        <p class="typewriter delay-2">> The Conducktors are evolving.</p>
-                        <p class="typewriter delay-3 highlight">> Status: ASSEMBLING (Coming Soon)</p>
-                        <span class="cursor">_</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+<body data-screen-label="01 Home">
 
-    <script src="main.js"></script>
+<!-- ======================= TOP BANNER ======================= -->
+<div class="site-banner">
+  <a href="index.html" aria-label="Superconducktors home">
+    <img src="assets/banner.png" alt="The Superconducktors · Team 60317" />
+  </a>
+</div>
+
+<!-- ======================= HEADER ======================= -->
+<header class="site-header">
+  <div class="site-header__inner">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" class="active">Home</a>
+      <a href="team.html">Team</a>
+      <a href="outreach.html">Outreach</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Join</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn night-toggle" aria-label="Toggle night mode">☾</button>
+      <button class="icon-btn menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ======================= HERO ======================= -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow fade-up fade-up--1">Rookie season · 2026</span>
+        <h1 class="fade-up fade-up--2">
+          <span class="line">Team</span>
+          <span class="line super">Supercon<span class="amp">duck</span>tors</span>
+        </h1>
+        <div class="hero-tagline fade-up fade-up--2" style="font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 0.12em; color: var(--ink-mute); text-transform: uppercase; margin-top: 16px;">60317 · FTC</div>
+        <p class="lead fade-up fade-up--3" style="font-size: clamp(22px, 2vw, 28px);">
+          We're building engineers, not just robots. Team 60317 spreads STEM through robotics, mentoring younger students, and creating pathways for anyone who wants to learn, create, and compete.
+        </p>
+        <div class="hero-cta fade-up fade-up--4">
+          <a href="#who-we-are" class="btn">Meet the team →</a>
+          <a href="sponsors.html" class="btn btn--ghost">Become a sponsor</a>
+        </div>
+        <div class="hero-stats fade-up fade-up--4">
+          <div><strong>3</strong><span>FLL seasons</span></div>
+          <div><strong>1</strong><span>Breakthrough award</span></div>
+          <div><strong>50+</strong><span>Students involved</span></div>
+          <div><strong>2026</strong><span>FTC rookie year</span></div>
+        </div>
+      </div>
+
+      <div class="hero-mark">
+        <div class="hero-badge">
+          <svg viewBox="0 0 220 220" width="100%" height="100%" aria-hidden="true">
+            <defs>
+              <path id="circle" d="M 110, 110 m -88, 0 a 88,88 0 1,1 176,0 a 88,88 0 1,1 -176,0" fill="none"/>
+            </defs>
+            <circle cx="110" cy="110" r="105" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="110" cy="110" r="92"  fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 4" opacity="0.5"/>
+            <text font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" letter-spacing="3" fill="currentColor">
+              <textPath href="#circle" startOffset="0">SUPERCONDUCKTORS · 60317 · FIRST TECH CHALLENGE · ROOKIE 2026 · </textPath>
+            </text>
+          </svg>
+          <div class="hero-badge-center">
+            <div class="hero-badge-num">60317</div>
+            <div class="hero-badge-line"></div>
+            <div class="hero-badge-label">est. 2023 · evolved 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= MARQUEE ======================= -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>★ Rookie season 2026</span><span>★ FIRST Tech Challenge</span><span>★ Team 60317</span>
+      <span>★ Megabirds → Awesome Inventors → Conducktors → Superconducktors</span>
+      <span>★ Quack quack</span><span>★ Breakthrough Award winners</span>
+      <span>★ Currently accepting sponsors & ducks</span>
+      <span>★ Rookie season 2026</span><span>★ FIRST Tech Challenge</span><span>★ Team 60317</span>
+      <span>★ Megabirds → Awesome Inventors → Conducktors → Superconducktors</span>
+      <span>★ Quack quack</span><span>★ Breakthrough Award winners</span>
+    </div>
+  </div>
+
+  <!-- ======================= INTRO ======================= -->
+  <section class="section" id="who-we-are">
+    <div class="container">
+      <div class="intro-eyebrow" style="margin-bottom: 36px;">
+        <span class="eyebrow">Who we are</span>
+      </div>
+      <div class="intro-grid">
+        <div class="intro-slideshow">
+          <div class="slideshow">
+            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/team-megabirds.jpg')"></div>
+            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/team-competition.png')"></div>
+            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/team-medals.png')"></div>
+            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/PXL_20231103_234322256.MP.jpg')"></div>
+            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/PXL_20231112_235704722.PORTRAIT.jpg')"></div>
+            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/PXL_20251126_155222797.MP.jpg')"></div>
+            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/PXL_20251213_183815537.jpg')"></div>
+          </div>
+        </div>
+        <div class="intro-content">
+          <div class="intro-body">
+          <h2>From FLL champions to FTC rookies. <em>Building robots. Mentoring teams. Spreading the spark.</em></h2>
+          <p class="lead" style="margin-top:24px;">
+            Welcome to the home of Team 60317, the Superconducktors. We're an ambitious group of student
+            innovators embarking on our rookie season in the FIRST Tech Challenge — but our team has a rich
+            history of collaboration and competition that began in <strong>5th grade</strong>.
+          </p>
+          <p style="margin-top:18px;">
+            Our journey started in FIRST Lego League, where we competed for three consecutive seasons:
+            Masterpiece, Submerged, and Unearthed. Over those three years we evolved from curious beginners
+            into a high-performing unit. Our dedication to creative problem-solving was recognized with the
+            <strong>Breakthrough Award</strong>, celebrating our team's unique approach to the Innovation
+            Project and our custom robot architecture.
+          </p>
+          <p style="margin-top:18px;">
+            Now we're transitioning from Lego to metal and high-powered electronics — and we're bringing
+            the Superconducktor spark to the FTC field this year.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= JOIN CTA ======================= -->
+  <section class="section section--cream2">
+    <div class="container">
+      <div class="join-cta">
+        <span class="eyebrow">Join the flock</span>
+        <h2>Want to build robots, mentor kids, or just come quack with us?</h2>
+        <p class="lead" style="margin-top:18px;max-width:56ch;">
+          We're recruiting students, mentors, and sponsors for the 2026 FTC season.
+          No experience required — just curiosity and a willingness to learn.
+        </p>
+        <div class="join-cta__actions">
+          <a href="contact.html" class="btn">Join us →</a>
+          <a href="sponsors.html" class="btn btn--ghost">Become a sponsor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= SPONSORS STRIP ======================= -->
+  <section class="section">
+    <div class="container">
+      <div class="sponsor-strip">
+        <div class="sponsor-strip__head">
+          <span class="eyebrow">Powered by</span>
+          <h2>Our sponsors keep the ducks afloat.</h2>
+          <p>Massive thanks to the organizations that make our rookie FTC season possible.</p>
+        </div>
+        <div class="sponsor-logos">
+          <div class="sponsor-logo">
+            <img src="assets/Qualcomm-Logo.svg" alt="Qualcomm" class="sponsor-logo__img" />
+            <span class="sponsor-logo__sub">Lead sponsor</span>
+          </div>
+          <div class="sponsor-logo">
+            <img src="assets/gene hass logo.png" alt="Gene Haas Foundation" class="sponsor-logo__img" />
+            <span class="sponsor-logo__sub">Sponsor</span>
+          </div>
+          <div class="sponsor-logo">
+            <img src="assets/team-spyde-logo.jpg" alt="Team Spyder" class="sponsor-logo__img" />
+            <span class="sponsor-logo__sub">Mentor team</span>
+          </div>
+          <div class="sponsor-logo sponsor-logo--ghost">
+            <span class="sponsor-logo__title">Your logo</span>
+            <span class="sponsor-logo__sub">Become a sponsor →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Super<span>conduck</span>tors</div>
+        <p class="footer-tagline">Team 60317 · FIRST Tech Challenge rookie season 2026.
+          Building engineers, mentoring teams, spreading the spark.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="outreach.html">Outreach</a></li>
+          <li><a href="contact.html">Join</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="outreach.html">Outreach</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="contact.html">hello@team60317.org</a></li>
+          <li><a href="contact.html">@superconducktors</a></li>
+          <li><a href="contact.html">Sponsor inquiries</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Superconducktors · FTC Team 60317</span>
+      <span>QUACK · QUACK · QUACK</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+/* ===== HOME-SPECIFIC ===== */
+.hero {
+  padding: clamp(60px, 10vw, 120px) var(--gutter) clamp(40px, 6vw, 80px);
+  max-width: var(--max);
+  margin: 0 auto;
+  position: relative;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+@media (max-width: 980px) { .hero-grid { grid-template-columns: 1fr; gap: 56px; } }
+
+.hero-copy h1 {
+  margin-top: 22px;
+  margin-bottom: 28px;
+}
+.hero-copy h1 .line { display: block; }
+.hero-copy h1 .line.super { font-style: italic; color: var(--ink); white-space: nowrap; }
+.hero-copy h1 .amp {
+  background: var(--duck);
+  padding: 0 0.08em;
+  border-radius: 6px;
+  font-style: normal;
+  display: inline-block;
+  transform: rotate(-1.5deg);
+  box-decoration-break: clone;
+}
+.hero-copy h1 .tagline-sm {
+  font-family: var(--mono);
+  font-size: clamp(13px, 1.2vw, 16px);
+  font-weight: 500;
+  color: var(--ink-mute);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-top: 18px;
+}
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 540px) { .hero-stats { grid-template-columns: repeat(2, 1fr); } }
+.hero-stats > div { display: flex; flex-direction: column; }
+.hero-stats strong {
+  font-family: var(--display);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.hero-stats span {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+}
+
+.hero-mark {
+  position: relative;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+.hero-badge {
+  width: min(82%, 380px);
+  aspect-ratio: 1;
+  position: relative;
+  color: var(--ink);
+  animation: hero-spin 50s linear infinite;
+}
+.hero-badge-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: hero-spin-rev 50s linear infinite;
+}
+.hero-badge-num {
+  font-family: var(--display);
+  font-size: clamp(50px, 9vw, 84px);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: var(--ink);
+  line-height: 1;
+}
+.hero-badge-line {
+  width: 60%;
+  height: 1px;
+  background: var(--ink);
+  margin: 12px auto 10px;
+  opacity: 0.4;
+}
+.hero-badge-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+}
+@keyframes hero-spin     { to { transform: rotate(360deg); } }
+@keyframes hero-spin-rev { to { transform: rotate(-360deg); } }
+
+@media (max-width: 980px) {
+  .hero-mark { max-width: 480px; margin: 0 auto; }
+}
+
+/* marquee */
+.marquee {
+  background: var(--ink);
+  color: var(--cream);
+  overflow: hidden;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: 18px 0;
+}
+body.night .marquee { background: var(--duck); color: var(--ink); }
+.marquee-track {
+  display: flex;
+  gap: 36px;
+  white-space: nowrap;
+  animation: marquee 38s linear infinite;
+  font-family: var(--display);
+  font-size: clamp(20px, 2.4vw, 28px);
+  font-style: italic;
+  font-weight: 500;
+}
+.marquee-track span { flex-shrink: 0; }
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+/* intro */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+@media (max-width: 980px) { .intro-grid { grid-template-columns: 1fr; gap: 24px; } }
+.intro-slideshow {
+  display: flex;
+  justify-content: center;
+}
+.intro-body em {
+  font-style: italic;
+  color: var(--orange-deep);
+}
+body.night .intro-body em { color: var(--duck); }
+
+/* join cta */
+.section--cream2 { background: var(--cream-2); }
+body.night .section--cream2 { background: var(--cream-2); }
+.join-cta {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+.join-cta .eyebrow { justify-content: center; }
+.join-cta h2 { margin-top: 18px; }
+.join-cta .lead { margin-left: auto; margin-right: auto; }
+.join-cta__actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+
+/* sponsor strip */
+.sponsor-strip {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 56px;
+  align-items: center;
+}
+@media (max-width: 880px) { .sponsor-strip { grid-template-columns: 1fr; } }
+.sponsor-strip__head h2 { margin: 16px 0 12px; }
+.sponsor-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media (max-width: 880px) { .sponsor-logos { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .sponsor-logos { grid-template-columns: 1fr; } }
+.sponsor-logo {
+  background: var(--paper);
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  min-height: 130px;
+  justify-content: center;
+}
+.sponsor-logo__img {
+  max-width: 100%;
+  max-height: 56px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.sponsor-logo__title {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--ink);
+}
+.sponsor-logo__sub {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+}
+.sponsor-logo--ghost { opacity: 0.7; }
+
+/* slideshow */
+.slideshow {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--ink);
+}
+.slideshow-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: slideshow-fade 14s steps(1, end) infinite;
+}
+.slideshow-slide:nth-child(1) { animation-delay: 0s; }
+.slideshow-slide:nth-child(2) { animation-delay: -2s; }
+.slideshow-slide:nth-child(3) { animation-delay: -4s; }
+.slideshow-slide:nth-child(4) { animation-delay: -6s; }
+.slideshow-slide:nth-child(5) { animation-delay: -8s; }
+.slideshow-slide:nth-child(6) { animation-delay: -10s; }
+.slideshow-slide:nth-child(7) { animation-delay: -12s; }
+@keyframes slideshow-fade {
+  0%, 14.28% { opacity: 1; }
+  14.29%, 100% { opacity: 0; }
+}
+</style>
+
+<script src="duck.js"></script>
 </body>
 </html>

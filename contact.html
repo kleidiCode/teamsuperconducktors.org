@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join · Superconducktors · Team 60317</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="duck.css">
+<link rel="icon" href="assets/duck-logo.png">
+</head>
+<body data-page="contact" data-screen-label="08 Contact">
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow fade-up">Chapter 07 · Get in touch</span>
+      <h1 class="fade-up fade-up--1">Say hi.<br>Or sponsor us.<br>Or join us.</h1>
+      <p class="lead fade-up fade-up--2" style="max-width:62ch;margin-top:24px;">
+        We answer every email. Especially the ones with sponsorship offers and especially
+        especially the ones with cute duck pictures.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="ci-card">
+            <span class="ci-eyebrow">Email</span>
+            <a class="ci-value" href="mailto:hello@team60317.org">hello@team60317.org</a>
+            <span class="ci-meta">Placeholder · update this</span>
+          </div>
+          <div class="ci-card">
+            <span class="ci-eyebrow">Instagram</span>
+            <a class="ci-value">@superconducktors</a>
+            <span class="ci-meta">Placeholder · update this</span>
+          </div>
+          <div class="ci-card">
+            <span class="ci-eyebrow">Sponsor inquiries</span>
+            <a class="ci-value" href="mailto:sponsors@team60317.org">sponsors@team60317.org</a>
+            <span class="ci-meta">Placeholder · update this</span>
+          </div>
+          <div class="ci-card">
+            <span class="ci-eyebrow">Mascot</span>
+            <span class="ci-value">Bartholomew II</span>
+            <span class="ci-meta">Replies in quacks</span>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="return false">
+          <h2>Drop us a line.</h2>
+          <p style="margin-top:8px;margin-bottom:24px;">Want to mentor us? Sponsor us? Just say hi? Use this.</p>
+          <label><span>Your name</span><input type="text" placeholder="Jane Engineer"></label>
+          <label><span>Your email</span><input type="email" placeholder="you@example.com"></label>
+          <label><span>I'm reaching out about…</span>
+            <select>
+              <option>Sponsoring the team</option>
+              <option>Mentoring / partnering</option>
+              <option>Hosting a demo at our school</option>
+              <option>Joining the team</option>
+              <option>Just wanted to say hi</option>
+            </select>
+          </label>
+          <label><span>Message</span><textarea rows="5" placeholder="Hi Superconducktors, ..."></textarea></label>
+          <button type="submit" class="btn" id="send-btn">Send · Quack</button>
+          <p class="form-note">Form is a placeholder — wire to real email on launch.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+.page-hero { padding: clamp(60px, 9vw, 110px) 0 clamp(40px, 6vw, 70px); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 48px; }
+@media (max-width: 880px) { .contact-grid { grid-template-columns: 1fr; } }
+
+.contact-info { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-self: start; }
+.ci-card {
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex; flex-direction: column; gap: 6px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.ci-card:hover { transform: translate(-2px,-2px); box-shadow: 4px 4px 0 var(--ink); }
+.ci-eyebrow { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; color: var(--ink-mute); text-transform: uppercase; }
+.ci-value { font-family: var(--display); font-size: 18px; font-weight: 700; color: var(--ink); }
+.ci-meta { font-family: var(--mono); font-size: 10px; color: var(--ink-mute); margin-top: 4px; }
+
+.contact-form {
+  background: var(--cream-2);
+  border: 1px solid var(--ink);
+  border-radius: 16px;
+  padding: 40px;
+  display: flex; flex-direction: column; gap: 16px;
+}
+@media (max-width: 540px) { .contact-form { padding: 24px; } }
+.contact-form label { display: flex; flex-direction: column; gap: 6px; }
+.contact-form span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: var(--ink); text-transform: uppercase; font-weight: 600; }
+.contact-form input, .contact-form select, .contact-form textarea {
+  font-family: var(--body); font-size: 15px; padding: 12px 14px;
+  border: 1px solid var(--ink); border-radius: 8px;
+  background: var(--paper); color: var(--ink);
+  outline: none;
+  transition: box-shadow 0.18s;
+}
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { box-shadow: 0 0 0 3px var(--duck); }
+.contact-form .btn { align-self: flex-start; margin-top: 8px; }
+.form-note { font-family: var(--mono); font-size: 10px; color: var(--ink-mute); }
+</style>
+
+<script src="site.js"></script>
+<script src="duck.js"></script>
+<script>
+// Confetti-feathers on submit
+document.getElementById('send-btn').addEventListener('click', (e) => {
+  const r = e.currentTarget.getBoundingClientRect();
+  for (let i = 0; i < 22; i++) {
+    const f = document.createElement('div');
+    f.textContent = ['🪶','✨','·'][Math.floor(Math.random()*3)];
+    f.style.cssText = `position:fixed;left:${r.left+r.width/2}px;top:${r.top}px;font-size:${14+Math.random()*16}px;pointer-events:none;z-index:99999;transition:all 1.6s cubic-bezier(.2,.6,.4,1);opacity:1`;
+    document.body.appendChild(f);
+    requestAnimationFrame(() => {
+      f.style.transform = `translate(${(Math.random()-0.5)*400}px,${-100-Math.random()*200}px) rotate(${Math.random()*720-360}deg)`;
+      f.style.opacity = '0';
+    });
+    setTimeout(()=>f.remove(), 1700);
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog · Superconducktors · Team 60317</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="duck.css">
+<link rel="icon" href="assets/duck-logo.png">
+</head>
+<body data-page="blog" data-screen-label="09 Blog">
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow fade-up">Chapter 08 · Build log</span>
+      <h1 class="fade-up fade-up--1">Updates from the duck pond.</h1>
+      <p class="lead fade-up fade-up--2" style="max-width:62ch;margin-top:24px;">
+        Build progress, late-night debugging stories, sponsor announcements, and the
+        occasional duck fact. Subscribe by checking back. Quack.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <article class="post post--feature">
+        <span class="post-tag">Featured · Apr 2026</span>
+        <h2><a>Counting down to the season reveal.</a></h2>
+        <p class="post-excerpt">
+          FTC's new season drops in May and we are refreshing the announcement page on a loop.
+          Parts research is done, the budget is locked in, and we're hustling on fundraising.
+          Here's where the Superconducktors stand heading into reveal weekend.
+        </p>
+        <div class="post-meta">
+          <span>By Nora · 4 min read</span>
+          <span>Topics: pre-season · parts · funding</span>
+        </div>
+      </article>
+
+      <div class="post-grid">
+        <article class="post">
+          <span class="post-tag">Apr 2026</span>
+          <h3><a>Parts &amp; budget: research is in the books.</a></h3>
+          <p class="post-excerpt">Twelve spreadsheets, three vendor rabbit holes, and a lot of forum scrolling later — we have a parts list and a number we can defend. Now we just need the game manual.</p>
+          <span class="post-meta">By Kashvi · 5 min</span>
+        </article>
+        <article class="post">
+          <span class="post-tag">Apr 2026</span>
+          <h3><a>Why we landed on goBILDA + a few REV parts.</a></h3>
+          <p class="post-excerpt">We compared the major FTC kit options end-to-end. goBILDA's chassis won on stiffness and price; REV control-system pieces won on documentation. Here's the head-to-head.</p>
+          <span class="post-meta">By Ibby · 6 min</span>
+        </article>
+        <article class="post">
+          <span class="post-tag">Apr 2026</span>
+          <h3><a>Funding a rookie FTC season — how we're pitching it.</a></h3>
+          <p class="post-excerpt">Lead sponsor secured, foundational support locked, and outreach pitches still going out. Notes on what's working, what isn't, and the deck we wish we'd built earlier.</p>
+          <span class="post-meta">By Nora · 4 min</span>
+        </article>
+        <article class="post">
+          <span class="post-tag">Mar 2026</span>
+          <h3><a>From Lego to FTC: what actually changes.</a></h3>
+          <p class="post-excerpt">Voltage. Mostly voltage. Also mass. Also the consequences of mistakes.</p>
+          <span class="post-meta">By Anna · 6 min</span>
+        </article>
+        <article class="post">
+          <span class="post-tag">Mar 2026</span>
+          <h3><a>Why we picked the name "Superconducktors."</a></h3>
+          <p class="post-excerpt">We had to. Last season we were the Conducktors — leveling up to FTC needed a "super" out front. Bonus: superconductors run with zero resistance, which is exactly the energy we're bringing to the field.</p>
+          <span class="post-meta">By Anvay · 2 min</span>
+        </article>
+        <article class="post post--ghost">
+          <span class="post-tag">Coming soon · May 2026</span>
+          <h3><a>Season reveal recap.</a></h3>
+          <p class="post-excerpt">Placeholder. The moment we hear the game, we sprint.</p>
+          <span class="post-meta">TBD</span>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+.page-hero { padding: clamp(60px, 9vw, 110px) 0 clamp(40px, 6vw, 70px); }
+.post--feature {
+  background: var(--duck);
+  border: 1px solid var(--ink);
+  border-radius: 16px;
+  padding: 48px;
+  margin-bottom: 32px;
+  box-shadow: 6px 6px 0 var(--ink);
+}
+@media (max-width: 600px) { .post--feature { padding: 32px 24px; } }
+.post--feature h2 { font-size: clamp(28px, 4vw, 44px); margin: 14px 0 16px; }
+.post--feature h2 a { cursor: pointer; }
+.post--feature .post-excerpt { font-size: clamp(16px, 1.5vw, 18px); color: var(--ink); max-width: 60ch; }
+
+.post-tag {
+  font-family: var(--mono); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; color: var(--ink); text-transform: uppercase;
+}
+.post-meta {
+  display: flex; gap: 16px; flex-wrap: wrap;
+  font-family: var(--mono); font-size: 11px; color: var(--ink-soft);
+  margin-top: 14px; letter-spacing: 0.04em;
+}
+.post-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--ink); border: 1px solid var(--ink); }
+@media (max-width: 880px) { .post-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .post-grid { grid-template-columns: 1fr; } }
+.post {
+  background: var(--paper);
+  padding: 28px 26px;
+  display: flex; flex-direction: column; gap: 10px;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.post:hover { background: var(--cream-2); }
+.post h3 { font-family: var(--display); font-size: 22px; font-weight: 700; line-height: 1.2; }
+.post-excerpt { font-size: 14px; color: var(--ink-soft); line-height: 1.6; flex: 1; }
+.post--ghost { background: transparent; }
+.post--ghost h3, .post--ghost .post-excerpt { opacity: 0.5; }
+</style>
+
+<script src="site.js"></script>
+<script src="duck.js"></script>
+</body>
+</html>
