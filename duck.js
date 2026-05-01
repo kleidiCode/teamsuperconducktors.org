@@ -201,7 +201,7 @@
         // alternate left/right foot, drop at duck's actual feet position
         const side = (Math.random() > 0.5) ? 'l' : 'r';
         const footX = duckX + (side === 'l' ? -14 : 12); // account for SVG left: -48px offset
-        const footY = duckY - 100 + 95; // feet are near bottom of SVG (100px tall, positioned at bottom: 0)
+        const footY = duckY - 100; // duck SVG bottom (feet) sits at duckY - 100 due to translate + bottom:0 anchoring
         spawnFootprint(footX, footY, side);
       }
     } else {

@@ -25,6 +25,9 @@
         <nav class="nav" aria-label="Primary">
           ${NAV.map(([h,l,s]) => `<a href="${h}" class="${s===page?'active':''}">${l}</a>`).join('')}
         </nav>
+        <a href="https://www.firstinspires.org/" class="first-logo-link" target="_blank" rel="noopener noreferrer">
+          <img src="assets/FIRST_Horz_RGB.jpg" alt="FIRST Inspires" class="first-logo" />
+        </a>
         <div class="header-actions">
           <button class="icon-btn night-toggle" aria-label="Toggle night mode">☾</button>
           <button class="icon-btn menu-toggle" aria-label="Toggle menu">☰</button>
