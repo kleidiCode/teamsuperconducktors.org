@@ -18,8 +18,8 @@
       <p class="lead fade-up fade-up--2" style="max-width:62ch;margin-top:24px;">
         Our team is organized into specialized squads. From CAD design to sponsor pitches, every squad interacts and works with each other to ensure a cohesive result. The robot is being built right now.
       </p>
-      <figure class="team-photo fade-up fade-up--3">
-        <img src="assets/slide-show-photos/team-building-bot.jpg" alt="The Superconducktors team photo" />
+      <figure class="team-photo photo-locked fade-up fade-up--3" style="--ratio: 16/9;">
+        <img src="assets/slide-show-photos/team-building-bot.jpg" alt="The Superconducktors team photo" draggable="false" />
       </figure>
     </div>
   </section>
@@ -190,7 +190,7 @@
   position: relative;
   max-width: 1100px;
 }
-.team-photo img { display: block; width: 100%; height: auto; }
+/* photo dimensions handled by .photo-locked utility */
 .team-photo figcaption {
   position: absolute;
   left: 16px; bottom: 16px;

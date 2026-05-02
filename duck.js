@@ -182,8 +182,8 @@
       lastDx = dx;
 
       // facing
-      if (dx > 2 && !facingRight) { facingRight = true; SIDE_SVG.style.transform = 'scaleX(1)'; }
-      else if (dx < -2 && facingRight) { facingRight = false; SIDE_SVG.style.transform = 'scaleX(-1)'; }
+      if (dx > 2 && !facingRight) { facingRight = true; SIDE_SVG.style.transform = 'scaleX(-1)'; }
+      else if (dx < -2 && facingRight) { facingRight = false; SIDE_SVG.style.transform = 'scaleX(1)'; }
 
       // waddle
       waddle += Math.min(dist * 0.04, 0.4);

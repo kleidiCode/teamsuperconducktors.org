@@ -4,6 +4,7 @@
 (function () {
   const NAV = [
     ['index.html',   'Home',     'home'],
+    ['history.html', 'History',  'history'],
     ['team.html',    'Team',     'team'],
     ['outreach.html','Outreach', 'outreach'],
     ['sponsors.html','Sponsors', 'sponsors'],
@@ -47,6 +48,7 @@
               Building engineers, mentoring teams, spreading the spark.</p>
           </div>
           <div><h4>Explore</h4><ul>
+            <li><a href="history.html">History</a></li>
             <li><a href="team.html">Team</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Join</a></li>
@@ -73,4 +75,9 @@
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', build);
   else build();
+
+  // Block context menu (right-click "Save image") only on protected photos
+  document.addEventListener('contextmenu', (e) => {
+    if (e.target.closest('.photo-locked')) e.preventDefault();
+  });
 })();

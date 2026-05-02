@@ -34,7 +34,9 @@
             <span class="tl-eyebrow">FLL · Masterpiece</span>
             <h3>The Megabirds</h3>
             <figure class="tl-photo">
-              <img src="assets/team-megabirds.jpg" alt="The Megabirds with mentors at their first FLL competition" />
+              <div class="photo-locked" style="--ratio: 4/3;">
+                <img src="assets/team-megabirds.jpg" alt="The Megabirds with mentors at their first FLL competition" draggable="false" />
+              </div>
               <figcaption>// 2023 · the original lineup, with mentors</figcaption>
             </figure>
             <p>Our first season. Our school's mascot was a bird, so naturally our Lego mascot was a chicken.
@@ -216,7 +218,7 @@
   overflow: hidden;
   background: var(--cream-2);
 }
-.tl-photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+/* image dimensions handled by .photo-locked utility on inner div */
 .tl-photo figcaption {
   font-family: var(--mono);
   font-size: 11px;

@@ -25,6 +25,7 @@
   <div class="site-header__inner">
     <nav class="nav" aria-label="Primary">
       <a href="index.html" class="active">Home</a>
+      <a href="history.html">History</a>
       <a href="team.html">Team</a>
       <a href="outreach.html">Outreach</a>
       <a href="sponsors.html">Sponsors</a>
@@ -110,7 +111,7 @@
       </div>
       <div class="intro-grid">
         <div class="intro-slideshow">
-          <div class="slideshow">
+          <div class="slideshow photo-locked" style="--ratio: 1/1;">
             <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/team-megabirds.jpg')"></div>
             <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/team-competition.png')"></div>
             <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/team-medals.png')"></div>
@@ -206,6 +207,7 @@
       <div>
         <h4>Explore</h4>
         <ul>
+          <li><a href="history.html">History</a></li>
           <li><a href="team.html">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="outreach.html">Outreach</a></li>
@@ -503,5 +505,10 @@ body.night .section--cream2 { background: var(--cream-2); }
 </style>
 
 <script src="duck.js"></script>
+<script>
+  document.addEventListener('contextmenu', (e) => {
+    if (e.target.closest('.photo-locked')) e.preventDefault();
+  });
+</script>
 </body>
 </html>
