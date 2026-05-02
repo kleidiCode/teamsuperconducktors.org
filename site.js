@@ -59,9 +59,9 @@
             <li><a href="contact.html">Contact</a></li>
           </ul></div>
           <div><h4>Get in touch</h4><ul>
-            <li><a href="contact.html">hello@team60317.org</a></li>
-            <li><a href="contact.html">@superconducktors</a></li>
+            <li><a href="mailto:coach@teamsuperconducktors.org">coach@teamsuperconducktors.org</a></li>
             <li><a href="contact.html">Sponsor inquiries</a></li>
+            <li><a href="contact.html">Join the team</a></li>
           </ul></div>
         </div>
         <div class="footer-bottom">

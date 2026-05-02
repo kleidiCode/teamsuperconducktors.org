@@ -24,6 +24,7 @@
 
   <section class="section">
     <div class="container">
+
       <div class="out-grid">
         <article class="out-card out-card--big">
           <span class="out-num">01</span>
@@ -31,6 +32,15 @@
           <p>We run drop-in sessions for our former FLL community. Robot strategy, programming
             basics, presentation coaching — all the things we wish someone had told <em>us</em>
             when we were beginners.</p>
+          <div class="tt-highlight">
+            <span class="tt-highlight__label">Outreach win</span>
+            <p class="tt-highlight__text">
+              We helped launch <span class="tt-team">Team 73319 · Time Twisters</span>
+              with kids from <span class="tt-light">Chaparral</span> and <span class="tt-light">Willow Grove</span> elementary —
+              and they made <span class="tt-regionals">regionals</span> their rookie year.
+              <span class="tt-cheer">Go Time Twisters!</span>
+            </p>
+          </div>
           <span class="out-tag">Ongoing · monthly</span>
         </article>
         <article class="out-card">
@@ -72,6 +82,44 @@
 
 <style>
 .page-hero { padding: clamp(60px, 9vw, 110px) 0 clamp(40px, 6vw, 70px); }
+
+.tt-highlight {
+  margin-top: 4px;
+  padding: 14px 16px;
+  background: #1F1A14;
+  border-radius: 10px;
+  border-left: 4px solid #3BC9E0;
+  position: relative;
+}
+.tt-highlight__label {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--bolt);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.out-card .tt-highlight__text {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #F5F5F5;
+  margin: 0;
+  font-weight: 500;
+}
+.tt-highlight .tt-light { color: #FFFFFF; font-weight: 600; }
+.tt-highlight .tt-team { color: #FFAA33; font-weight: 700; }
+.tt-highlight .tt-regionals { color: #66EEFF; font-weight: 700; }
+.tt-highlight .tt-cheer {
+  display: inline-block;
+  margin-left: 4px;
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 700;
+  color: #FFAA33;
+}
+
 .out-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 @media (max-width: 880px) { .out-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 540px) { .out-grid { grid-template-columns: 1fr; } }
