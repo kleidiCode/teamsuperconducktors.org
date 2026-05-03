@@ -90,19 +90,6 @@
     </div>
   </section>
 
-  <!-- ======================= MARQUEE ======================= -->
-  <div class="marquee">
-    <div class="marquee-track">
-      <span>★ Rookie season 2026</span><span>★ FIRST Tech Challenge</span><span>★ Team 60317</span>
-      <span>★ Megabirds → Awesome Inventors → Conducktors → Superconducktors</span>
-      <span>★ Quack quack</span><span>★ Breakthrough Award winners</span>
-      <span>★ Currently accepting sponsors & ducks</span>
-      <span>★ Rookie season 2026</span><span>★ FIRST Tech Challenge</span><span>★ Team 60317</span>
-      <span>★ Megabirds → Awesome Inventors → Conducktors → Superconducktors</span>
-      <span>★ Quack quack</span><span>★ Breakthrough Award winners</span>
-    </div>
-  </div>
-
   <!-- ======================= INTRO ======================= -->
   <section class="section" id="who-we-are">
     <div class="container">
@@ -112,13 +99,13 @@
       <div class="intro-grid">
         <div class="intro-slideshow">
           <div class="slideshow photo-locked" style="--ratio: 1/1;">
-            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/team-megabirds.jpg')"></div>
-            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/team-competition.png')"></div>
+            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/megabrirds-redacted.jpg')"></div>
+            <div class="slideshow-slide" style="background-image: url('assets/team-competition-redacted.jpg')"></div>
             <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/team-medals.png')"></div>
             <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/PXL_20231103_234322256.MP.jpg')"></div>
-            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/PXL_20231112_235704722.PORTRAIT.jpg')"></div>
+            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/megabirds-win-photo.jpg')"></div>
             <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/PXL_20251126_155222797.MP.jpg')"></div>
-            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/PXL_20251213_183815537.jpg')"></div>
+            <div class="slideshow-slide" style="background-image: url('assets/slide-show-photos/team-game-redacted.jpg')"></div>
           </div>
         </div>
         <div class="intro-content">
@@ -169,8 +156,8 @@
       <div class="sponsor-strip">
         <div class="sponsor-strip__head">
           <span class="eyebrow">Powered by</span>
-          <h2>Our sponsors keep the ducks afloat.</h2>
-          <p>Massive thanks to the organizations that make our rookie FTC season possible.</p>
+          <h2>Our sponsors and supporters keep the ducks afloat.</h2>
+          <p>Deepest thanks to all the organizations that supported us. Special shoutout to the Spyder team.</p>
         </div>
         <div class="sponsor-logos">
           <div class="sponsor-logo">
@@ -234,7 +221,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Superconducktors · FTC Team 60317</span>
-      <span>QUACK · QUACK · QUACK</span>
+      <span>BUILD · MENTOR · SPARK</span>
     </div>
   </div>
 </footer>
@@ -357,31 +344,6 @@
 
 @media (max-width: 980px) {
   .hero-mark { max-width: 480px; margin: 0 auto; }
-}
-
-/* marquee */
-.marquee {
-  background: var(--ink);
-  color: var(--cream);
-  overflow: hidden;
-  border-top: 1px solid var(--ink);
-  border-bottom: 1px solid var(--ink);
-  padding: 18px 0;
-}
-body.night .marquee { background: var(--duck); color: var(--ink); }
-.marquee-track {
-  display: flex;
-  gap: 36px;
-  white-space: nowrap;
-  animation: marquee 38s linear infinite;
-  font-family: var(--display);
-  font-size: clamp(20px, 2.4vw, 28px);
-  font-style: italic;
-  font-weight: 500;
-}
-.marquee-track span { flex-shrink: 0; }
-@keyframes marquee {
-  to { transform: translateX(-50%); }
 }
 
 /* intro */

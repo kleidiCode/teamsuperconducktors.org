@@ -13,12 +13,7 @@
   ];
   function build() {
     const page = document.body.dataset.page || '';
-    // Top banner (above header)
-    const banner = document.createElement('div');
-    banner.className = 'site-banner';
-    banner.innerHTML = `<a href="index.html" aria-label="Superconducktors home"><img src="assets/banner.png" alt="The Superconducktors · Team 60317" /></a>`;
-    document.body.insertBefore(banner, document.body.firstChild);
-    // Header
+    // Header (insert first so banner can be placed before it)
     const header = document.createElement('header');
     header.className = 'site-header';
     header.innerHTML = `
@@ -35,6 +30,11 @@
         </div>
       </div>`;
     document.body.insertBefore(header, document.body.firstChild);
+    // Top banner — must end up BEFORE the header in DOM so sticky CSS works
+    const banner = document.createElement('div');
+    banner.className = 'site-banner';
+    banner.innerHTML = `<a href="index.html" aria-label="Superconducktors home"><img src="assets/banner.png" alt="The Superconducktors · Team 60317" /></a>`;
+    document.body.insertBefore(banner, header);
 
     // Footer
     const footer = document.createElement('footer');
@@ -68,7 +68,7 @@
         </div>
         <div class="footer-bottom">
           <span>© 2026 Superconducktors · FTC Team 60317</span>
-          <span>QUACK · QUACK · QUACK</span>
+          <span>BUILD · MENTOR · SPARK</span>
         </div>
       </div>`;
     document.body.appendChild(footer);

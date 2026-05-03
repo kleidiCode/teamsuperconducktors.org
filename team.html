@@ -18,8 +18,8 @@
       <p class="lead fade-up fade-up--2" style="max-width:62ch;margin-top:24px;">
         Our team is organized into specialized squads. From CAD design to sponsor pitches, every squad interacts and works with each other to ensure a cohesive result. The robot is being built right now.
       </p>
-      <figure class="team-photo photo-locked fade-up fade-up--3" style="--ratio: 16/9;">
-        <img src="assets/slide-show-photos/team-building-bot.jpg" alt="The Superconducktors team photo" draggable="false" />
+      <figure class="team-photo photo-locked fade-up fade-up--3" style="--ratio: 1/1; width: 300px; max-width: 300px;">
+        <img src="assets/team-2026-season.jpg" alt="The Superconducktors 2026 season team photo" draggable="false" />
       </figure>
     </div>
   </section>
@@ -43,8 +43,8 @@
               </div>
             </header>
             <p class="member-desc">
-              Kashvi is a 3-year veteran of FIRST Robotics. She loves science, animals, music, and basketball.
-              She is also part of the school choir at Bernardo Heights Middle School.
+              Three years in FIRST Robotics, now leading on chassis design and CAD documentation.
+              Outside of robotics: science, animals, music, basketball, and school choir.
             </p>
           </article>
         </div>
@@ -66,8 +66,8 @@
               </div>
             </header>
             <p class="member-desc">
-              Lots of experience with 3D printing and electricals. He is very good with computers
-              and fun to work with.
+              Hands-on experience with 3D printing, electronics, and microcontrollers.
+              Comfortable across hardware and software, and a steady presence on the team.
             </p>
           </article>
         </div>
@@ -89,8 +89,8 @@
               </div>
             </header>
             <p class="member-desc">
-              3-year robotics veteran. Very creative and artful, with a strong interest in human biology.
-              Has a beautiful voice and is part of the school choir.
+              Three-year robotics veteran with a creative, methodical approach to problem-solving.
+              Outside of robotics: human biology, art, and choir.
             </p>
           </article>
         </div>
@@ -112,8 +112,8 @@
               </div>
             </header>
             <p class="member-desc">
-              A 3-year robotics veteran who loves video games. He has excellent piano skills
-              and takes MMA classes.
+              Three-year robotics veteran on the driver controls.
+              Outside of robotics: video games, piano, and MMA.
             </p>
           </article>
         </div>
@@ -135,23 +135,32 @@
               </div>
             </header>
             <p class="member-desc">
-              Extremely organized with excellent attention to detail. Very good at coding and drawing.
-              Part of the Bernardo Heights Middle School leadership crew.
+              Organized, detail-oriented, and equally fluent in code and graphic design.
+              Keeps budgets on track and sponsor pitches sharp. Also part of the school leadership crew.
             </p>
           </article>
         </div>
       </div>
 
       <div class="robot-progress fade-up">
-        <span class="eyebrow" style="color: var(--duck);">Build progress · rookie season</span>
+        <span class="eyebrow" style="color: var(--duck);">Pre-season · 2026–2027</span>
         <h3 style="margin-top:14px;">Where we are right now.</h3>
+        <p class="rp-intro">
+          The 2026–2027 FTC season was teased on May 2nd —
+          <a href="https://www.youtube.com/watch?v=boJWcbOxato" target="_blank" rel="noopener noreferrer">watch the reveal</a>.
+          Team prep ramps through the summer, full game kickoff and the manual drop the first
+          Saturday of September, and league meets begin in November. Until then, we're prepping hard.
+        </p>
         <div class="progress-list">
-          <div class="prog-item done"><span class="prog-dot"></span><strong>Team founded</strong><em>Roles assigned, kit unboxed</em></div>
-          <div class="prog-item done"><span class="prog-dot"></span><strong>Game manual studied</strong><em>Strategy doc · v1</em></div>
-          <div class="prog-item current"><span class="prog-dot"></span><strong>Drivetrain prototyping</strong><em>In progress · mecanum vs. tank</em></div>
-          <div class="prog-item"><span class="prog-dot"></span><strong>First CAD review</strong><em>Targeting next milestone</em></div>
-          <div class="prog-item"><span class="prog-dot"></span><strong>Auto code v1</strong><em>After mechanical lock-in</em></div>
-          <div class="prog-item"><span class="prog-dot"></span><strong>Scrimmage</strong><em>Late season</em></div>
+          <div class="prog-item done"><span class="prog-dot"></span><strong>Team formed</strong><em>Carrying forward from the Conducktors</em></div>
+          <div class="prog-item done"><span class="prog-dot"></span><strong>FTC registration</strong><em>Team 60317 confirmed</em></div>
+          <div class="prog-item current"><span class="prog-dot"></span><strong>Recruiting</strong><em>Bringing in more members</em></div>
+          <div class="prog-item current"><span class="prog-dot"></span><strong>Fundraising</strong><em>Lead sponsor locked, more in flight</em></div>
+          <div class="prog-item current"><span class="prog-dot"></span><strong>Parts research</strong><em>Pre-season BOM in progress</em></div>
+          <div class="prog-item current"><span class="prog-dot"></span><strong>Learning FTC</strong><em>Rules, judging, parts ecosystem</em></div>
+          <div class="prog-item"><span class="prog-dot"></span><strong>Season kickoff</strong><em>Early September 2026</em></div>
+          <div class="prog-item"><span class="prog-dot"></span><strong>Build season</strong><em>September – November</em></div>
+          <div class="prog-item"><span class="prog-dot"></span><strong>First qualifier</strong><em>Late fall / winter</em></div>
         </div>
       </div>
 
@@ -367,6 +376,18 @@
 }
 @media (max-width: 600px) { .robot-progress { padding: 32px 24px; } }
 .robot-progress h3 { color: var(--cream); font-family: var(--display); font-size: clamp(22px, 2.5vw, 30px); }
+.robot-progress .rp-intro {
+  font-size: 15px;
+  line-height: 1.65;
+  color: rgba(255,248,231,0.78);
+  margin-top: 14px;
+  max-width: 64ch;
+}
+.robot-progress .rp-intro a {
+  color: var(--duck);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .progress-list {
   margin-top: 28px;
   display: grid;

@@ -458,7 +458,7 @@ body.night .site-footer { background: #0A0805; }
   -webkit-user-select: none;
 }
 .photo-locked::after {
-  content: '© SUPERCONDUCKTORS · 60317';
+  content: '© 60317';
   position: absolute;
   right: 10px;
   bottom: 8px;
