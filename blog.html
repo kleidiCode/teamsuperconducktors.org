@@ -25,16 +25,22 @@
   <section class="section">
     <div class="container">
       <article class="post post--feature">
-        <span class="post-tag">Featured · Apr 2026</span>
-        <h2><a>Counting down to the season reveal.</a></h2>
+        <span class="post-tag">Featured · May 2026</span>
+        <h2><a>Season reveal: we have a game.</a></h2>
         <p class="post-excerpt">
-          FTC's new season drops in May and we are refreshing the announcement page on a loop.
-          Parts research is done, the budget is locked in, and we're hustling on fundraising.
-          Here's where the Superconducktors stand heading into reveal weekend.
+          The 2026–2027 FTC season was officially revealed on May 2. The full game manual drops at
+          kickoff in early September, but the teaser gives us enough to start strategizing. Watch
+          the reveal below.
         </p>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/ncbwmR5eJRc"
+            title="2026–2027 FTC Season Reveal"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
         <div class="post-meta">
-          <span>By Nora · 4 min read</span>
-          <span>Topics: pre-season · parts · funding</span>
+          <span>By Kashvi · 3 min read</span>
+          <span>Topics: season-reveal · pre-season</span>
         </div>
       </article>
 
@@ -70,9 +76,9 @@
           <span class="post-meta">By Anvay · 2 min</span>
         </article>
         <article class="post post--ghost">
-          <span class="post-tag">Coming soon · May 2026</span>
-          <h3><a>Season reveal recap.</a></h3>
-          <p class="post-excerpt">Placeholder. The moment we hear the game, we sprint.</p>
+          <span class="post-tag">Coming soon · Sept 2026</span>
+          <h3><a>Build kickoff and the first 48 hours.</a></h3>
+          <p class="post-excerpt">Game manual drops the first Saturday of September. We'll post our day-1 strategy, day-2 prototypes, and the open questions we're chasing into build season.</p>
           <span class="post-meta">TBD</span>
         </article>
       </div>
@@ -94,6 +100,26 @@
 .post--feature h2 { font-size: clamp(28px, 4vw, 44px); margin: 14px 0 16px; }
 .post--feature h2 a { cursor: pointer; }
 .post--feature .post-excerpt { font-size: clamp(16px, 1.5vw, 18px); color: var(--ink); max-width: 60ch; }
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  margin: 22px 0 4px;
+  border: 1px solid var(--ink);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 4px 4px 0 var(--ink);
+  background: #000;
+}
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 .post-tag {
   font-family: var(--mono); font-size: 11px; font-weight: 600;
