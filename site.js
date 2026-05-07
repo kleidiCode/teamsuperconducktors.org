@@ -10,6 +10,7 @@
     ['sponsors.html','Sponsors', 'sponsors'],
     ['blog.html',    'Blog',     'blog'],
     ['contact.html', 'Join',     'contact'],
+    ['crew.html',    'Crew',     'crew'],
   ];
   function build() {
     const page = document.body.dataset.page || '';

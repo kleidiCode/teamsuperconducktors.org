@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crew · Superconducktors · Team 60317</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="duck.css">
+<link rel="icon" href="assets/duck-logo.png">
+</head>
+<body data-page="crew" data-screen-label="10 Crew">
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow fade-up">Members only</span>
+      <h1 class="fade-up fade-up--1">Crew Hub</h1>
+      <p class="lead fade-up fade-up--2" style="max-width:62ch;margin-top:24px;">
+        Resources for the Superconducktors team. Enter the team password to continue.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <form id="crew-gate" class="crew-gate">
+        <label>
+          <span>Team password</span>
+          <input type="password" id="crew-pass" autocomplete="off" autocapitalize="off" spellcheck="false" required />
+        </label>
+        <button type="submit" class="btn">Unlock →</button>
+        <p class="crew-error" id="crew-error" hidden>That's not the password. Ask your coach.</p>
+        <p class="crew-hint">If you've forgotten it, ask your coach or one of the squad leads.</p>
+      </form>
+
+      <div id="crew-content" hidden>
+        <h2 style="margin-bottom: 8px;">Team resources</h2>
+        <p style="max-width:60ch;">Bookmark these. The team board is where requests, homework, and build tasks live. The team drive is where docs, photos, and design files live.</p>
+        <div class="crew-links">
+          <a href="https://github.com/users/kleidiCode/projects/2/views/1" target="_blank" rel="noopener noreferrer" class="crew-link">
+            <span class="crew-link__label">Team board →</span>
+            <span class="crew-link__sub">Tickets · homework · build progress</span>
+          </a>
+          <a href="https://drive.google.com/drive/folders/1IUqFV6eWUFIwtXuinwj9GQgktWEdoVz0?usp=drive_link" target="_blank" rel="noopener noreferrer" class="crew-link">
+            <span class="crew-link__label">Team drive →</span>
+            <span class="crew-link__sub">Shared docs · photos · design files</span>
+          </a>
+        </div>
+
+        <div class="crew-note">
+          <span class="eyebrow">How "Bartholomew" works</span>
+          <p>Open a ticket on the team board and label it <strong>Bartholomew</strong> if you want a website change. Your coach will pick it up and Bartholomew (with help from the engineering side) will make the edit.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<style>
+.page-hero { padding: clamp(60px, 9vw, 110px) 0 clamp(40px, 6vw, 70px); }
+
+.crew-gate {
+  max-width: 420px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 14px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 5px 5px 0 var(--ink);
+}
+.crew-gate label { display: flex; flex-direction: column; gap: 6px; }
+.crew-gate label > span {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 600;
+}
+.crew-gate input {
+  font-family: var(--body);
+  font-size: 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  background: var(--cream);
+  color: var(--ink);
+  outline: none;
+  transition: box-shadow 0.18s;
+}
+.crew-gate input:focus { box-shadow: 0 0 0 3px var(--duck); }
+.crew-gate .btn { align-self: flex-start; margin-top: 4px; }
+.crew-error {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: #B83A2A;
+  margin: 0;
+}
+.crew-hint {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+
+.crew-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+.crew-link {
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 12px;
+  padding: 24px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.crew-link:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--ink); }
+.crew-link__label {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.crew-link__sub {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.crew-note {
+  margin-top: 36px;
+  padding: 24px 28px;
+  border: 2px dashed var(--ink);
+  border-radius: 14px;
+  background: var(--cream-2);
+  max-width: 720px;
+}
+.crew-note p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink);
+  margin-top: 8px;
+}
+</style>
+
+<script src="site.js"></script>
+<script src="duck.js"></script>
+<script>
+(function () {
+  const PASSWORD = 'F1C&A';
+  const STORAGE_KEY = 'crew_unlocked_v1';
+
+  const gate = document.getElementById('crew-gate');
+  const passInput = document.getElementById('crew-pass');
+  const error = document.getElementById('crew-error');
+  const content = document.getElementById('crew-content');
+
+  function unlock() {
+    gate.hidden = true;
+    content.hidden = false;
+  }
+
+  if (sessionStorage.getItem(STORAGE_KEY) === '1') {
+    unlock();
+    return;
+  }
+
+  gate.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (passInput.value === PASSWORD) {
+      sessionStorage.setItem(STORAGE_KEY, '1');
+      unlock();
+    } else {
+      error.hidden = false;
+      passInput.value = '';
+      passInput.focus();
+    }
+  });
+})();
+</script>
+</body>
+</html>
