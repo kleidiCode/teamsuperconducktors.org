@@ -34,7 +34,7 @@
     // Top banner — must end up BEFORE the header in DOM so sticky CSS works
     const banner = document.createElement('div');
     banner.className = 'site-banner';
-    banner.innerHTML = `<a href="index.html" aria-label="Superconducktors home"><img src="assets/banner.png" alt="The Superconducktors · Team 60317" /></a>`;
+    banner.innerHTML = `<a href="index.html" aria-label="Superconducktors home"><img src="assets/banner.png" alt="The Superconducktors · Team 37488" /></a>`;
     document.body.insertBefore(banner, header);
 
     // Footer
@@ -45,7 +45,7 @@
         <div class="footer-grid">
           <div>
             <div class="footer-brand">Super<span>conduck</span>tors</div>
-            <p class="footer-tagline">Team 60317 · FIRST Tech Challenge rookie season 2026.
+            <p class="footer-tagline">Team 37488 · FIRST Tech Challenge rookie season 2026.
               Building engineers, mentoring teams, spreading the spark.</p>
           </div>
           <div><h4>Explore</h4><ul>
@@ -68,7 +68,7 @@
           </ul></div>
         </div>
         <div class="footer-bottom">
-          <span>© 2026 Superconducktors · FTC Team 60317</span>
+          <span>© 2026 Superconducktors · FTC Team 37488</span>
           <span>BUILD · MENTOR · SPARK</span>
         </div>
       </div>`;

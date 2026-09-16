@@ -1,5 +1,5 @@
 /* ==========================================================
-   SUPERCONDUCKTORS — TEAM 60317
+   SUPERCONDUCKTORS — TEAM 37488
    Shared design system
    ========================================================== */
 
@@ -646,7 +646,7 @@ body.night .site-footer {
 }
 
 .photo-locked::after {
-  content: '© 60317';
+  content: '© 37488';
   position: absolute;
   right: 10px;
   bottom: 8px;
