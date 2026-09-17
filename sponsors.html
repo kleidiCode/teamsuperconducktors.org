@@ -21,6 +21,8 @@
       <p class="lead fade-up fade-up--2" style="max-width:62ch;margin-top:24px;">
         FLL &amp; FTC robots aren't cheap and rookie teams are even more expensive with initial
         startup costs. We are deeply grateful to the organizations that have invested in us.
+        Run a local business? You can back us another way, too:
+        <a href="#websites" class="sp-hero-link">we'll build or update your website</a>.
       </p>
     </div>
   </section>
@@ -71,6 +73,61 @@
             to them as we ramp into FTC.</p>
         </div>
       </div>
+
+      <section class="sp-web" id="websites" aria-labelledby="websites-title">
+        <div class="sp-web__head">
+          <span class="eyebrow">Websites for local businesses</span>
+          <h2 id="websites-title">Run a local business? We'll build your website.</h2>
+          <p class="lead">
+            We build new websites and update existing ones for local businesses. Instead of a fee, we
+            ask you to donate any amount you think is reasonable to our team. It goes toward our robot
+            and our season.
+          </p>
+        </div>
+
+        <div class="sp-web__grid">
+          <article class="sp-web__card">
+            <h3>See it before you decide</h3>
+            <p>We build a working prototype of your site first, tested at phone width as we go. You
+              look at it, tell us what's off, and decide from there.</p>
+          </article>
+          <article class="sp-web__card">
+            <h3>Your words, word for word</h3>
+            <p>We carry your existing copy over exactly as you wrote it. Anything new we add is yours
+              to approve or cut.</p>
+          </article>
+          <article class="sp-web__card">
+            <h3>Set up for search engines and AI</h3>
+            <p>Clear page titles and descriptions, image descriptions, and structured data that spell
+              out who you are, what you offer, and how to reach you: the details search engines and AI
+              assistants read.</p>
+          </article>
+          <article class="sp-web__card">
+            <h3>Yours to keep</h3>
+            <p>You own the site and its files. No subscription, nothing locked to us, and you decide
+              what goes live.</p>
+          </article>
+        </div>
+
+        <div class="sp-web__how">
+          <h3>How it works</h3>
+          <ol class="sp-web__steps">
+            <li><strong>Tell us about your business.</strong> What you do, and what your site needs.</li>
+            <li><strong>We build a prototype.</strong> A working version you can click through.</li>
+            <li><strong>You tell us what to change.</strong> We make the changes and check back in.</li>
+            <li><strong>You decide what goes live.</strong> It's your site, on your schedule.</li>
+          </ol>
+        </div>
+
+        <div class="sp-web__foot">
+          <p class="sp-web__why">Every project is a small business for us to run: a business plan, a
+            pitch, a budget, and a real client counting on us.</p>
+          <div class="sp-web__cta">
+            <a href="contact.html?reason=website" class="btn">Tell us about your business →</a>
+            <span class="sp-web__mail">or email <a href="mailto:coach@teamsuperconducktors.org">coach@teamsuperconducktors.org</a></span>
+          </div>
+        </div>
+      </section>
 
       <div class="sp-pitch">
         <div class="sp-pitch__copy">
@@ -154,6 +211,82 @@
   letter-spacing: 0.04em;
 }
 .sp-logo-text em { display: block; font-size: 12px; font-style: normal; letter-spacing: 0.2em; opacity: 0.7; margin-top: 4px; font-weight: 600; }
+
+.sp-hero-link { text-decoration: underline; text-underline-offset: 3px; }
+
+/* websites fundraiser */
+.sp-web { margin-top: 80px; scroll-margin-top: 90px; }
+@media (max-width: 760px) { .sp-web { scroll-margin-top: 160px; } }
+.sp-web__head { max-width: 760px; }
+.sp-web__head h2 { margin: 14px 0 16px; font-size: clamp(30px, 4.4vw, 52px); }
+.sp-web__grid {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 1080px) { .sp-web__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .sp-web__grid { grid-template-columns: 1fr; } }
+.sp-web__card {
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 4px 4px 0 var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sp-web__card h3 { font-size: 21px; font-weight: 700; }
+.sp-web__card p { font-size: 15px; }
+.sp-web__how {
+  margin-top: 32px;
+  padding: 28px 32px;
+  border: 2px dashed var(--ink);
+  border-radius: 14px;
+  background: var(--cream-2);
+}
+.sp-web__how h3 { font-size: 22px; font-weight: 700; }
+.sp-web__steps {
+  list-style: none;
+  counter-reset: step;
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 880px) { .sp-web__steps { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 540px) { .sp-web__steps { grid-template-columns: 1fr; } }
+.sp-web__steps li { counter-increment: step; font-size: 15px; line-height: 1.55; color: var(--ink-soft); }
+.sp-web__steps li::before {
+  content: counter(step, decimal-leading-zero);
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--orange-deep);
+  margin-bottom: 6px;
+}
+.sp-web__steps strong { display: block; color: var(--ink); font-weight: 600; }
+.sp-web__foot {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.sp-web__why {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(18px, 2vw, 22px);
+  color: var(--ink);
+  max-width: 48ch;
+}
+.sp-web__cta { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.sp-web__mail { font-family: var(--mono); font-size: 11px; color: var(--ink-mute); }
+.sp-web__mail a { text-decoration: underline; text-underline-offset: 3px; }
 
 .sp-pitch {
   margin-top: 80px;

@@ -12,7 +12,8 @@
   // ----- Persisted state -----
   const LS_DUCK = 'sc_duck_visible';
   const LS_NIGHT = 'sc_night';
-  let duckVisible = localStorage.getItem(LS_DUCK) !== 'false';
+  // Off by default — the duck only shows once a visitor clicks "Bring duck"
+  let duckVisible = localStorage.getItem(LS_DUCK) === 'true';
 
   // ----- Build duck DOM -----
   const duckEl = document.createElement('div');

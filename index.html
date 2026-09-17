@@ -31,7 +31,7 @@
       <a href="outreach.html">Outreach</a>
       <a href="sponsors.html">Sponsors</a>
       <a href="blog.html">Blog</a>
-      <a href="contact.html">Join</a>
+      <a href="contact.html">Contact</a>
       <a href="crew.html">Crew</a>
     </nav>
     <a href="https://www.firstinspires.org/" class="first-logo-link" target="_blank" rel="noopener noreferrer">
@@ -65,7 +65,7 @@
         <div class="hero-stats fade-up fade-up--4">
           <div><strong>3</strong><span>FLL seasons</span></div>
           <div><strong>1</strong><span>Breakthrough award</span></div>
-          <div><strong>50+</strong><span>Students involved</span></div>
+          <div><strong>9</strong><span>Team members</span></div>
           <div><strong>2026</strong><span>FTC rookie year</span></div>
         </div>
       </div>
@@ -114,8 +114,8 @@
           <div class="intro-body">
           <h2>From FLL champions to FTC rookies. <em>Building robots. Mentoring teams. Spreading the spark.</em></h2>
           <p class="lead" style="margin-top:24px;">
-            Welcome to the home of Team 37488, the Superconducktors. We're an ambitious group of student
-            innovators embarking on our rookie season in the FIRST Tech Challenge — but our team has a rich
+            Welcome to the home of Team 37488, the Superconducktors. We're nine student innovators (six girls
+            and three boys) embarking on our rookie season in the FIRST Tech Challenge — but our team has a rich
             history of collaboration and competition that began in <strong>5th grade</strong>.
           </p>
           <p style="margin-top:18px;">
@@ -132,20 +132,54 @@
         </div>
       </div>
     </div>
+    </div>
   </section>
 
-  <!-- ======================= JOIN CTA ======================= -->
+  <!-- ======================= THIS SEASON ======================= -->
+  <section class="section section--season">
+    <div class="container">
+      <span class="eyebrow">Build season · Fall 2026</span>
+      <h2 class="season-head">Three things we're building right now.</h2>
+      <div class="season-grid">
+        <article class="season-card season-card--duck">
+          <span class="season-card__num">01 · The robot</span>
+          <h3>A prototype base</h3>
+          <p>Our first prototype is a base with varied capabilities, built on mecanum wheels so it can
+            drive, strafe sideways, and turn, all at the same time.</p>
+          <a href="blog.html" class="season-card__link">Read the build log →</a>
+        </article>
+        <article class="season-card">
+          <span class="season-card__num">02 · The code</span>
+          <h3>Vectors and OnBot Java</h3>
+          <p>Mecanum wheels only go where you point them if the math is right. We're learning the
+            vectoring behind them and writing our code in OnBot Java, building on libraries instead of
+            starting from scratch.</p>
+          <a href="team.html" class="season-card__link">Meet the squads →</a>
+        </article>
+        <article class="season-card season-card--bolt">
+          <span class="season-card__num">03 · The funding</span>
+          <h3>Websites for local businesses</h3>
+          <p>We build and update websites for local businesses, set up for search engines and AI, for a
+            donation instead of a fee. Along the way we're learning to write a business plan, pitch, and
+            manage our own funds.</p>
+          <a href="sponsors.html#websites" class="season-card__link">How it works →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= BACK THE FLOCK ======================= -->
   <section class="section section--cream2">
     <div class="container">
       <div class="join-cta">
-        <span class="eyebrow">Join the flock</span>
-        <h2>Want to build robots, mentor kids, or just come quack with us?</h2>
+        <span class="eyebrow">Back the flock</span>
+        <h2>Want to mentor us, sponsor us, or get a website from us?</h2>
         <p class="lead" style="margin-top:18px;max-width:56ch;">
-          We're recruiting students, mentors, and sponsors for the 2026 FTC season.
-          No experience required — just curiosity and a willingness to learn.
+          Our roster is full for the 2026–27 season. We'd still love mentors and sponsors, and local
+          businesses can get a website from our team for a donation instead of a fee.
         </p>
         <div class="join-cta__actions">
-          <a href="contact.html" class="btn">Join us →</a>
+          <a href="contact.html" class="btn">Get in touch →</a>
           <a href="sponsors.html" class="btn btn--ghost">Become a sponsor</a>
         </div>
       </div>
@@ -200,7 +234,6 @@
           <li><a href="team.html">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="outreach.html">Outreach</a></li>
-          <li><a href="contact.html">Join</a></li>
         </ul>
       </div>
       <div>
@@ -217,7 +250,7 @@
         <ul>
           <li><a href="mailto:coach@teamsuperconducktors.org">coach@teamsuperconducktors.org</a></li>
           <li><a href="contact.html">Sponsor inquiries</a></li>
-          <li><a href="contact.html">Join the team</a></li>
+          <li><a href="sponsors.html#websites">Websites for businesses</a></li>
         </ul>
       </div>
     </div>
@@ -365,6 +398,49 @@
   color: var(--orange-deep);
 }
 body.night .intro-body em { color: var(--duck); }
+
+/* this season */
+.section--season { padding-top: 0; }
+.season-head { margin: 16px 0 36px; max-width: 20ch; }
+.season-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 880px) { .season-grid { grid-template-columns: 1fr; } }
+.season-card {
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 4px 4px 0 var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+/* bright cards keep dark ink in night mode */
+.season-card--duck { background: var(--duck); --ink: #1F1A14; --ink-soft: #4A4238; }
+.season-card--bolt { background: var(--bolt); --ink: #1F1A14; --ink-soft: #4A4238; }
+.season-card__num {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.season-card h3 { font-size: 24px; font-weight: 700; }
+.season-card p { font-size: 15px; flex: 1; }
+.season-card--duck p, .season-card--bolt p { color: var(--ink); }
+.season-card__link {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 /* join cta */
 .section--cream2 { background: var(--cream-2); }

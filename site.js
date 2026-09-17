@@ -9,7 +9,7 @@
     ['outreach.html','Outreach', 'outreach'],
     ['sponsors.html','Sponsors', 'sponsors'],
     ['blog.html',    'Blog',     'blog'],
-    ['contact.html', 'Join',     'contact'],
+    ['contact.html', 'Contact',  'contact'],
     ['crew.html',    'Crew',     'crew'],
   ];
   function build() {
@@ -52,7 +52,6 @@
             <li><a href="history.html">History</a></li>
             <li><a href="team.html">Team</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Join</a></li>
             <li><a href="outreach.html">Outreach</a></li>
           </ul></div>
           <div><h4>More</h4><ul>
@@ -64,7 +63,7 @@
           <div><h4>Get in touch</h4><ul>
             <li><a href="mailto:coach@teamsuperconducktors.org">coach@teamsuperconducktors.org</a></li>
             <li><a href="contact.html">Sponsor inquiries</a></li>
-            <li><a href="contact.html">Join the team</a></li>
+            <li><a href="sponsors.html#websites">Websites for businesses</a></li>
           </ul></div>
         </div>
         <div class="footer-bottom">

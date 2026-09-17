@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Join · Superconducktors · Team 37488</title>
+<title>Contact · Superconducktors · Team 37488</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
@@ -17,10 +17,10 @@
   <section class="page-hero">
     <div class="container">
       <span class="eyebrow fade-up">Chapter 07 · Get in touch</span>
-      <h1 class="fade-up fade-up--1">Say hi.<br>Or sponsor us.<br>Or join us.</h1>
+      <h1 class="fade-up fade-up--1">Say hi.<br>Or sponsor us.<br>Or mentor us.</h1>
       <p class="lead fade-up fade-up--2" style="max-width:62ch;margin-top:24px;">
-        Sponsorship, mentoring, school visits, joining the team — everything routes through
-        one inbox, and we reply to all of it. Cute duck pictures welcome too.
+        Sponsorship, mentoring, school visits, a website for your business — everything routes
+        through one inbox, and we reply to all of it. Cute duck pictures welcome too.
       </p>
     </div>
   </section>
@@ -32,27 +32,21 @@
           <div class="ci-card ci-card--wide">
             <span class="ci-eyebrow">Email — all inquiries</span>
             <a class="ci-value" href="mailto:coach@teamsuperconducktors.org">coach@teamsuperconducktors.org</a>
-            <span class="ci-meta">Sponsorship, mentoring, joining, demos — everything routes here.</span>
-          
+            <span class="ci-meta">Sponsorship, mentoring, demos, websites — everything routes here.</span>
           </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJWc8RWOVJs9AJhnDUB7wxA3vVfxsMn1KpQ1Ce8sIy_gco8A/viewform" target="_blank" rel="noopener noreferrer" class="ci-card ci-card--wide" style="text-decoration: none;">
-            <span class="ci-eyebrow">Join the team</span>
-            <span class="ci-value" style="color: var(--ink);">Application Form →</span>
-            <span class="ci-meta">Click to open Google Form</span>
-          </a>
         </div>
 
         <form class="contact-form" id="contact-form">
           <h2>Drop us a line.</h2>
-          <p style="margin-top:8px;margin-bottom:24px;">Want to mentor us? Sponsor us? Just say hi? Use this.</p>
+          <p style="margin-top:8px;margin-bottom:24px;">Want to mentor us? Sponsor us? Need a website? Just say hi? Use this.</p>
           <label><span>Your name</span><input type="text" name="name" placeholder="Jane Engineer" required></label>
           <label><span>Your email</span><input type="email" name="email" placeholder="you@example.com" required></label>
           <label><span>I'm reaching out about…</span>
             <select name="reason">
               <option>Sponsoring the team</option>
+              <option>A website for my business</option>
               <option>Mentoring / partnering</option>
               <option>Hosting a demo at our school</option>
-              <option>Joining the team</option>
               <option>Just wanted to say hi</option>
             </select>
           </label>
@@ -110,6 +104,11 @@
 <script src="site.js"></script>
 <script src="duck.js"></script>
 <script>
+// Links like contact.html?reason=website arrive with the matching topic already picked
+if (new URLSearchParams(location.search).get('reason') === 'website') {
+  document.querySelector('#contact-form select[name="reason"]').value = 'A website for my business';
+}
+
 document.getElementById('contact-form').addEventListener('submit', (e) => {
   e.preventDefault();
   const f = e.currentTarget;

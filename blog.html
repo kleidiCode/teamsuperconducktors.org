@@ -28,7 +28,29 @@
   <section class="section">
     <div class="container">
       <article class="post post--feature">
-        <span class="post-tag">Featured · May 2026</span>
+        <span class="post-tag">Featured · Sept 2026</span>
+        <h2><a>Build season: a base, some vectors, and a fundraiser.</a></h2>
+        <div class="post-body">
+          <p>Kickoff is behind us, and our first prototype is taking shape: a drive base with varied
+            capabilities, rolling on mecanum wheels.</p>
+          <p>Each mecanum wheel has small rollers set at 45°, so it pushes at an angle instead of straight
+            ahead. Spin all four wheels the same way and those angled pushes cancel out side to side, so
+            the robot drives straight. Spin the two diagonal pairs in opposite directions and it slides
+            sideways. Add a turn on top and it can do all three at once. Turning a joystick's direction
+            into four separate wheel speeds is vector math, and that's what we're learning right now.</p>
+          <p>We're writing that code in OnBot Java, the Java editor that runs in a browser straight off the
+            robot controller, and building on libraries instead of starting from scratch.</p>
+          <p>And we're paying for the season by building websites for local businesses.
+            <a href="sponsors.html#websites">Here's how that works.</a></p>
+        </div>
+        <div class="post-meta">
+          <span>By the team · 2 min read</span>
+          <span>Topics: build-season · mecanum · onbot-java · fundraising</span>
+        </div>
+      </article>
+
+      <article class="post post--feature post--quiet">
+        <span class="post-tag">May 2026</span>
         <h2><a>Season reveal: we have a game.</a></h2>
         <p class="post-excerpt">
           The 2026–2027 FTC season was officially revealed on May 2. The full game manual drops at
@@ -48,6 +70,12 @@
       </article>
 
       <div class="post-grid">
+        <article class="post">
+          <span class="post-tag">Sept 2026</span>
+          <h3><a href="sponsors.html#websites">We build websites to fund our robot.</a></h3>
+          <p class="post-excerpt">Local businesses get a new or updated website, set up for search engines and AI. We get donations for our season, plus real practice writing a business plan, pitching, and managing money.</p>
+          <span class="post-meta">By the team</span>
+        </article>
         <article class="post">
           <span class="post-tag">Apr 2026</span>
           <h3><a>Parts &amp; budget: research is in the books.</a></h3>
@@ -78,12 +106,6 @@
           <p class="post-excerpt">Last season we were the Conducktors. Stepping up to FTC, we wanted a name that signaled the leap. Bonus: superconductors carry current with zero friction — exactly the energy we're bringing to the field.</p>
           <span class="post-meta">By Anvay · 2 min</span>
         </article>
-        <article class="post post--ghost">
-          <span class="post-tag">Coming soon · Sept 2026</span>
-          <h3><a>Build kickoff and the first 48 hours.</a></h3>
-          <p class="post-excerpt">Game manual drops the first Saturday of September. We'll post our day-1 strategy, day-2 prototypes, and the open questions we're chasing into build season.</p>
-          <span class="post-meta">TBD</span>
-        </article>
       </div>
     </div>
   </section>
@@ -103,6 +125,12 @@
 .post--feature h2 { font-size: clamp(28px, 4vw, 44px); margin: 14px 0 16px; }
 .post--feature h2 a { cursor: pointer; }
 .post--feature .post-excerpt { font-size: clamp(16px, 1.5vw, 18px); color: var(--ink); max-width: 60ch; }
+/* the yellow feature keeps dark ink in night mode; the quiet one sits on paper */
+.post--feature:not(.post--quiet) { --ink: #1F1A14; --ink-soft: #4A4238; }
+.post--quiet { background: var(--paper); }
+.post-body { display: grid; gap: 14px; max-width: 62ch; }
+.post-body p { font-size: clamp(16px, 1.5vw, 18px); color: var(--ink); }
+.post-body a { font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 
 .video-embed {
   position: relative;
