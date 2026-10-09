@@ -84,14 +84,8 @@
         </article>
         <article class="post">
           <span class="post-tag">Apr 2026</span>
-          <h3><a>Why we landed on goBILDA + a few REV parts.</a></h3>
-          <p class="post-excerpt">We compared the major FTC kit options end-to-end. goBILDA's chassis won on stiffness and price; REV control-system pieces won on documentation. Here's the head-to-head.</p>
-          <span class="post-meta">By Ibby · 6 min</span>
-        </article>
-        <article class="post">
-          <span class="post-tag">Apr 2026</span>
           <h3><a>Funding a rookie FTC season — how we're pitching it.</a></h3>
-          <p class="post-excerpt">Lead sponsor secured, foundational support locked, and outreach pitches still going out. Notes on what's working, what isn't, and the deck we wish we'd built earlier.</p>
+          <p class="post-excerpt">Qualcomm and the Gene Haas Foundation had us covered through the 2025–26 season, and outreach pitches were still going out for the next one. Notes on what worked, what didn't, and the deck we wish we'd built earlier.</p>
           <span class="post-meta">By Nora · 4 min</span>
         </article>
         <article class="post">
@@ -162,6 +156,9 @@
   margin-top: 14px; letter-spacing: 0.04em;
 }
 .post-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--ink); border: 1px solid var(--ink); }
+/* the grid's lines are the ink background showing through the gaps, so any leftover cell needs
+   filling or it reads as a solid block */
+.post-grid::after { content: ''; background: var(--paper); }
 @media (max-width: 880px) { .post-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 540px) { .post-grid { grid-template-columns: 1fr; } }
 .post {
